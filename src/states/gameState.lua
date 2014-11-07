@@ -1,9 +1,15 @@
-require("systems/draw/drawSystem")
+-- Models
+local PlayerModel = require("models/playerModel")
 
-require("models/playerModel")
+-- Systems
+local DrawSystem = require("systems/draw/drawSystem")
 
-GameState = class("GameState", State)
+-- Events
+local KeyPressed = require("events/keyPressed")
 
+-- State superclass
+local State = require("core/state")
+local GameState = class("GameState", State)
 function GameState:load()
     self.engine = Engine()
     self.eventmanager = EventManager()
@@ -25,3 +31,5 @@ end
 function GameState:keypressed(key, isrepeat)
     self.eventmanager:fireEvent(KeyPressed(key, isrepeat))
 end
+
+return GameState

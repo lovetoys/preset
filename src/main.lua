@@ -3,15 +3,9 @@ require("lib/lovetoys/lovetoys")
 
 -- Framework Requirements
 require("core/stackhelper")
-require("core/state")
 require("core/resources")
 
--- States
-require("states/menuState")
-require("states/gameState")
-
--- Events
-require("events/keyPressed")
+local MenuState = require("states/menuState")
 
 function love.load()
     resources = Resources()

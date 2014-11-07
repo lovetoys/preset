@@ -1,4 +1,11 @@
-MenuState = class("MenuState", State)
+
+local GameState = require("states/gameState")
+
+local KeyPressed = require("events/keyPressed")
+
+-- State superclass
+local State = require("core/state")
+local MenuState = class("MenuState", State)
 
 function MenuState:load()
     self.engine = Engine()
@@ -21,3 +28,5 @@ function MenuState:keypressed(key, isrepeat)
     -- Start the game when any key is pressed
     stack:push(GameState())
 end
+
+return MenuState
