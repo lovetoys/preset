@@ -3,20 +3,20 @@
 default: run
 
 buildclean:
-	@[[ ! -e seocda.love ]] || rm seocda.love
+	@[[ ! -e game.love ]] || rm game.love
 
 clean:
-	@[[ ! -e seocda.love ]] || rm seocda.love
+	@[[ ! -e game.love ]] || rm game.love
 	@[[ ! -e pkg ]] || rm -r pkg
 	@[[ ! -e lib ]] || rm -r lib
 	@[[ ! -e temp ]] || rm -r temp
 
 build: buildclean
-	@zip -q -r -0 seocda.love data/*
-	@cd src/ && zip -q -r ../seocda.love *
+	@zip -q -r -0 game.love data/*
+	@cd src/ && zip -q -r ../game.love *
 
 run: build
-	@love seocda.love
+	@love game.love
 
 setup:
 	git submodule update --init
