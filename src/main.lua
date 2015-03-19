@@ -2,10 +2,10 @@
 require("lib/lovetoys/lovetoys")
 
 -- Framework Requirements
-require("core/stackhelper")
-require("core/resources")
+require("core/Stackhelper")
+require("core/Resources")
 
-local MenuState = require("states/menuState")
+local MenuState = require("states/MenuState")
 
 function love.load()
     resources = Resources()

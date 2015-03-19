@@ -1,11 +1,8 @@
--- Models
-local PlayerModel = require("models/playerModel")
-
 -- Systems
-local DrawSystem = require("systems/draw/drawSystem")
+local DrawSystem = require("systems/draw/DrawSystem")
 
 -- Events
-local KeyPressed = require("events/keyPressed")
+local KeyPressed = require("events/KeyPressed")
 
 -- State superclass
 local State = require("core/state")
@@ -14,10 +11,8 @@ function GameState:load()
     self.engine = Engine()
     self.eventmanager = EventManager()
 
-    self.engine:addSystem(DrawSystem(), "draw", 1)
+    self.engine:addSystem(DrawSystem())
 
-    self.player = PlayerModel()
-    self.engine:addEntity(self.player)
 end
 
 function GameState:update(dt)
