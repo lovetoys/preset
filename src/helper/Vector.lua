@@ -1,6 +1,6 @@
 local Vector = class("Vector")
 
-function Vector:__init(x, y)
+function Vector:initialize(x, y)
     if y == nil then
         self.x = x or 0
         self.y = x or 0

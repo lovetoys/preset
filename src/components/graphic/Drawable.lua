@@ -1,6 +1,6 @@
 Drawable = class("Drawable", Component)
 
-function Drawable:__init(image, index, sx, sy, ox, oy)
+function Drawable:initialize(image, index, sx, sy, ox, oy)
     self.image = image
     self.index = index or 0
     self.sx = sx

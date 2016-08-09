@@ -5,7 +5,7 @@ local DrawSystem = require("systems/draw/DrawSystem")
 local KeyPressed = require("events/KeyPressed")
 
 -- State superclass
-local State = require("core/state")
+local State = require("core/State")
 local GameState = class("GameState", State)
 function GameState:load()
     self.engine = Engine()

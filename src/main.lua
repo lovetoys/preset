@@ -1,5 +1,6 @@
 -- Main Lövetoys Library
-require("lib/lovetoys/lovetoys")
+lovetoys = require("lib/lovetoys/lovetoys")
+lovetoys.initialize({globals = true, debug = true})
 
 -- Framework Requirements
 require("core/Stackhelper")
@@ -25,7 +26,7 @@ end
 
 function love.draw()
     stack:current():draw()
-end 
+end
 
 function love.keypressed(key, isrepeat)
     stack:current():keypressed(key, isrepeat)
