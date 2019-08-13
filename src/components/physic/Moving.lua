@@ -1,6 +1,6 @@
 local Vector = require("helper/Vector")
 
-local Moving = class("Moving", Component)
+local Moving = class("Moving")
 
 function Moving:initialize(speed, maxSpeed)
     self.speed = speed or Vector()

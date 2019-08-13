@@ -1,6 +1,6 @@
 local Vector = require("helper/Vector")
 
-local Rotating = class("Rotating", Component)
+local Rotating = class("Rotating")
 
 function Rotating:initialize(defaultRotationSpeed)
     self.defRotationSpeed = defaultRotationSpeed

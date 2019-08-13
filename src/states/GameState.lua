@@ -12,7 +12,6 @@ function GameState:load()
     self.eventmanager = EventManager()
 
     self.engine:addSystem(DrawSystem())
-
 end
 
 function GameState:update(dt)

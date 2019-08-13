@@ -1,4 +1,4 @@
-local DrawableText = class("DrawableText", Component)
+local DrawableText = class("DrawableText")
 
 function DrawableText:initialize(font, color,string, values)
     self.font = font
