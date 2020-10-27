@@ -8,7 +8,7 @@ function table.getKey(list, element)
     return false
 end
 
-function table.count(list) 
+function table.count(list)
     local counter = 0
     for index, value in pairs(list) do
         counter = counter + 1

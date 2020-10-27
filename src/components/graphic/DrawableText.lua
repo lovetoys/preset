@@ -1,6 +1,6 @@
-local DrawableText = class("DrawableText")
+local DrawableText = Component.create("DrawableText")
 
-function DrawableText:initialize(font, color,string, values)
+function DrawableText:initialize(font, color, string, values)
     self.font = font
     self.string = string
     self.color = color or {255, 255, 255}

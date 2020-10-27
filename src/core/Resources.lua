@@ -1,7 +1,6 @@
 Resources = class("Resources")
 
 function Resources:initialize()
-    
     self.imageQueue = {}
     self.musicQueue = {}
     self.soundQueue = {}
@@ -29,8 +28,7 @@ function Resources:addFont(name, src, size)
     self.fontQueue[name] = {src, size}
 end
 
-function Resources:load(threaded)
-
+function Resources:load()
     for name, pair in pairs(self.fontQueue) do
         self.fonts[name] = love.graphics.newFont(pair[1], pair[2])
         self.fontQueue[name] = nil

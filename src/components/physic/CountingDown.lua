@@ -1,4 +1,4 @@
-local CountingDown = class("TimerSystem")
+local CountingDown = Component.create("CountingDown")
 
 function CountingDown:initialize(event, time)
     self.time = time
