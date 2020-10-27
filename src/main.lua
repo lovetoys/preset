@@ -1,5 +1,5 @@
 -- Main Lövetoys Library
-lovetoys = require("lib/lovetoys/lovetoys")
+lovetoys = require("lib/lovetoys")
 lovetoys.initialize({globals = true, debug = true})
 
 -- Framework Requirements
